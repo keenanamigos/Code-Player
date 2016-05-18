@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Code Player Project</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="codeplayer.css">
+</head>
+	
+<body>
+	<div id="topbar">
+		<span id="code-player-text">CodePlayer</span>
+		
+		<div id="buttonContainer">
+			<div id="html" class="toggleButton active">HTML</div>
+			<div id="css" class="toggleButton">CSS</div>
+			<div id="javascript" class="toggleButton">JavaScript</div>
+			<div id="output" class="toggleButton active">Output</div>
+		</div>
+	</div>
+	
+	<div id="bodyContainer">
+		<textarea id="htmlPanel" class="panel"><p id="paragraph">Hello, World!</p></textarea>
+		<textarea id="cssPanel" class="panel hidden">p {color: blue; }</textarea>
+		<textarea id="javascriptPanel" class="panel hidden"><!--/*Ensure JavaScript is working*/ document.getElementById("paragraph").innerHTML = "Hello, user!"; --></textarea>
+		<iframe id="outputPanel" class="panel"></iframe>
+	</div>
+	
+	
+	
+	<script type="text/javascript" src="codeplayer.js"></script>
+</body>
+</html>
